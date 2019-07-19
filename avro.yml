@@ -3,7 +3,7 @@
   sudo: yes
   tasks:
     - name: Installing Avro jeyboard
-      command: ""{{ item }}""
+      command: "{{ item }}"
       with_items :
        - sudo add-apt-repository "deb http://download.opensuse.org/repositories/home:/sarimkhan/xUbuntu_14.04/ ./"
        - wget -q http://download.opensuse.org/repositories/home:/sarimkhan/xUbuntu_14.04/Release.key -O- | sudo apt-key add -
